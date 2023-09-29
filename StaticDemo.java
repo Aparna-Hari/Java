@@ -46,6 +46,21 @@ class Demo
 
 }
 
+class Area{
+    float r;
+    static float pi = 3.14f;//By making pi as static variable, we dont have to assign memory for pi in the heap everytime we create object
+    float area;
+
+    public float calcArea(float radius)
+    {
+        this.r = radius;
+        area = pi* r*r;
+        return area;
+    }
+
+
+}
+
 
 
 public class StaticDemo 
@@ -56,6 +71,22 @@ public class StaticDemo
         Demo.disp1(); //static method is called using classname
         d.disp2();
         System.out.println("This is from Main method");
+
+        Area a1= new Area();
+        float area1= a1.calcArea(6); 
+        System.out.println(area1);
+
+        Area a2= new Area();
+        float area2= a2.calcArea(8);
+        System.out.println(area2);
+
+        Area a3= new Area();
+        float area3= a3.calcArea(9);
+        System.out.println(area3);
+
+        Area a4= new Area();
+        float area4= a4.calcArea(10);
+        System.out.println(area4);
     }
     
 }
