@@ -19,8 +19,13 @@ class Demo
         System.out.println("This is java initialisation block");
     }
     //4.
-    public Demo() //Java initialization method is first called when constructor is called during object creation
+    public Demo() //Java initialization method is first called when constructor is called during object creation as below
     {
+        // {
+        // x = 300;
+        // y = 400;
+        // System.out.println("This is java initialisation block");
+        // }
         System.out.println("This is constructor");
 
     }
