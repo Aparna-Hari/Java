@@ -64,6 +64,13 @@ class PaymentProcess
     {
         this.pay = pay;
     }
+
+    //Constructor Injection
+    public PaymentProcess(IPay pay)
+    {
+        super();
+        this.pay = pay;
+    }
     
 
     public boolean doPayment(double amount)
