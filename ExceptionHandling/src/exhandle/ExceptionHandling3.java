@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 class Alpha
 {
-	public void alpha() throws ArithmeticException
+	public void alpha() throws ArithmeticException //Ducking the exception 
 	{
 		System.out.println("Welcome to my app");
 		
@@ -62,8 +62,7 @@ public class ExceptionHandling3 {
   //Whenever we are not handling the exception in the method body itself, 
   //then we have to mention it in methods' signature so programmer is aware that it could lead to exception
  
-//***Re-throwing the exception using 'throw' keyword in the catch block
-  // Statements after throw keyword are not executed, it acts similar to return statement
+
 
 
 
