@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 class Alpha1
 {
-	public void alpha1() 
+	public void alpha1() throws ArithmeticException
 	{
 		try 
 		{
