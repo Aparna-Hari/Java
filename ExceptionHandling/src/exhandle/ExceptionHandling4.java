@@ -29,10 +29,17 @@ class Alpha1
 		{
 			System.out.println("Exception is caught in Alpha method itself");
 			
-			throw e;
+			throw e; //re-throwing the handled exception object to the caller method
 			
 		}
-		System.out.println("Thank you for using the app");
+		//System.out.println("Thank you for using the app");
+		finally 
+		{
+			System.out.println("Thank you for using the app");
+				
+		}
+		
+		
 	}
 	
 }
@@ -58,4 +65,7 @@ public class ExceptionHandling4
 
 
 //***Re-throwing the handled exception object using 'throw' keyword in the catch block
-// Statements after throw keyword are not executed, it acts similar to return statement
+// Statements after throw keyword are not executed, it acts similar to return statement -line 35 is skipped
+
+
+//if 'finally' block is used after throw keyword, it gets executed irrespective of the exception
