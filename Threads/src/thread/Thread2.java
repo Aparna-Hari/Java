@@ -19,6 +19,7 @@ class Alpha implements Runnable
 		System.out.println("Login success!");
 		System.out.println("Banking Activity ended...");
 		
+		scan.close();
 		
 		System.out.println("********************");
 	}
