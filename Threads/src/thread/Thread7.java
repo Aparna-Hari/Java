@@ -108,3 +108,9 @@ public class Thread7 {
   //Deadlock can occur in a situation when a thread is waiting for an object lock, 
   //that is acquired by another thread and second thread is waiting for an object lock that is acquired by first thread. 
   //Since, both threads are waiting for each other to release the lock, the condition is called deadlock.
+
+//But we can avoid them by following basic rules as follows:
+
+   //Avoid Nested Locks: We must avoid giving locks to multiple threads, this is the main reason for a deadlock condition. It normally happens when you give locks to multiple threads.
+   //Avoid Unnecessary Locks: The locks should be given to the important threads. Giving locks to the unnecessary threads that cause the deadlock condition.
+   //Using Thread Join: A deadlock usually happens when one thread is waiting for the other to finish. In this case, we can use join with a maximum time that a thread will take.
