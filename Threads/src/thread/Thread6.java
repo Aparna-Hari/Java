@@ -94,3 +94,5 @@ public class Thread6 {
 //Multiple threads racing for single resource without considering CPU time cycles is called race condition..
 
 //Synchronized keyword can be applied  to either method or to a specific block
+
+//At synchronized environment, only one thread can be executed
