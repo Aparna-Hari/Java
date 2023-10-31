@@ -71,3 +71,5 @@ public class Thread5 {
 	}
 
 }
+
+//Multiple threads can execute single/common resource 
