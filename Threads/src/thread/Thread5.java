@@ -21,28 +21,51 @@ class Alien implements Runnable
 		
 	}
 	@Override
-	public void run() {
-		// TODO Auto-generated method stub
+	public void run() 
+	{
+		String tName = Thread.currentThread().getName();
+		
+		if(tName.equals("CALC"))
+		{
+			calc();
+		}
+		else message();
 		
 	}
-	public void message()
+	public void message() 
 	{
 		System.out.println("Displaying important message started");
 		
 		for(int i=0; i< 4;i++)
 		{
 			System.out.println("Focus is important to master any skill");
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		System.out.println("Displaying important message ended");
 	}
 }
 	
-}
+
 
 public class Thread5 {
 
 	public static void main(String[] args) 
 	{
+		Alien a1 = new Alien();
+		
+		Thread t1 = new Thread(a1);
+		Thread t2 = new Thread(a1);
+		
+		t1.setName("CALC");
+		t2.setName("Message");
+		
+		t1.start();
+		t2.start();
 		
 
 	}

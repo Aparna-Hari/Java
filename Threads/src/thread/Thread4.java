@@ -76,3 +76,5 @@ public class Thread4
 //Thread scheduler decides which thread need to be executed when start( )is invoked
 
 //If we invoke run() manually, it behaves as single threaded program
+
+//join() is used for the particular thread to wait until the execution is done
