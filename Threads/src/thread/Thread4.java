@@ -77,4 +77,4 @@ public class Thread4
 
 //If we invoke run() manually, it behaves as single threaded program
 
-//join() is used for the particular thread to wait until the execution is done
+//join() is used for the particular thread to wait until the execution is done..
