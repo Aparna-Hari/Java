@@ -24,7 +24,7 @@ public class LaunchJDBC3 {
 		
 		//Creating the statement
 		Statement stmt =  connect.createStatement();
-		String query = "UPDATE authors set name = 'Hder' where id = 6";
+		String query = "UPDATE authors set name = 'Hyder' where id = 6";
 		int rowsAffected = stmt.executeUpdate(query);
 		
 		System.out.println("Number of rows affected are :" + rowsAffected);
