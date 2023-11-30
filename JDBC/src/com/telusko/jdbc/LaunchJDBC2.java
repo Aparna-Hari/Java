@@ -48,8 +48,6 @@ public class LaunchJDBC2
 				connect.close();
 				}
 				
-
-
-	}
+}
 
 
