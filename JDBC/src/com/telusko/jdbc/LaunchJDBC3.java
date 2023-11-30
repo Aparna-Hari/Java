@@ -42,7 +42,7 @@ public class LaunchJDBC3 {
 		if(rowsDeleted != 0)
 			System.out.println("Deleted Successfully");
 		else 
-			System.out.println("Failed to Delete");
+			System.out.println("Failed to Delete data");
 		
 		stmt.close();
 		connect.close();
