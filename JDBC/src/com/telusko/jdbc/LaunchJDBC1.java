@@ -26,7 +26,7 @@ public class LaunchJDBC1 {
 		//Executing the Query
 		String query = "select * from authors";
 		
-		//Processing the resultSet
+		//Processing the ResultSet
 		
 		ResultSet rSet= stmt.executeQuery(query);
 		System.out.println("We have got result set");
